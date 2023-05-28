@@ -1,0 +1,19 @@
+{
+  "name": "yoko-utility",
+  "version": "0.0.1",
+  "description": "yoko-utility package ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/mzgamingvn/yoko-utility)"
+  },
+  "keywords": [
+    "discord",
+    "utility"
+  ],
+  "author": "mzgamingvn",
+  "license": "ISC"
+}
