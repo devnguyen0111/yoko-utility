@@ -1,6 +1,5 @@
 function prettyNumber(number) {
-  const pattern = /(-?\d+)(\d{3})/;
-  return number.toString().replace(pattern, ",");
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 module.exports = { prettyNumber };
