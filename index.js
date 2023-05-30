@@ -1,21 +1,13 @@
 const fs = require("fs");
 const path = require("path");
 
-const directoryPath = path.join(__dirname, "function");
+const utilsPath = path.join(__dirname, "function");
 
-fs.readdir(directoryPath, function (err, files) {
-  if (err) {
-    return console.log("Unable to scan directory: " + err);
+const files = fs.readdirSync(utilsPath);
+
+files.forEach((file) => {
+  if (file.endsWith(".js")) {
+    const utilModule = require(path.join(utilsPath, file));
+    Object.assign(exports, utilModule);
   }
-
-  files.forEach(function (file) {
-    if (file.endsWith(".js")) {
-      const filePath = path.join(directoryPath, file);
-      const module = require(filePath);
-
-      Object.keys(module).forEach((functionName) => {
-        exports[functionName] = module[functionName];
-      });
-    }
-  });
 });
