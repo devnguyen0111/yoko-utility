@@ -1,15 +1,17 @@
 {
   "name": "yoko-utility",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "yoko-utility package ",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "(https://github.com/mzgamingvn/yoko-utility)"
+    "url": "git+https://github.com/mzgamingvn/yoko-utility.git"
   },
+  "homepage": "https://github.com/mzgamingvn/yoko-utility",
   "keywords": [
     "discord",
     "utility"
